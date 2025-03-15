@@ -1,6 +1,8 @@
 # lajolla
-UCSD CSE 272 renderer
-
+Improved over lajolla renderer, with features
+- Disney principled bsdf
+- volumetric render
+- ReSTIR
 # Build
 All the dependencies are included. Use CMake to build.
 If you are on Unix systems, try

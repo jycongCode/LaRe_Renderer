@@ -1,0 +1,110 @@
+<scene version="2.1.0">
+
+<!-- Defaults, these can be set via the command line: -Darg=value -->
+
+	<default name="spp" value="64"/>
+	<default name="resx" value="1920"/>
+	<default name="resy" value="1080"/>
+
+<!-- Camera and Rendering Parameters -->
+
+	<integrator type="restir" id="elm__0" name="elm__0">
+		<integer name="maxM" value="10000"/>
+		<integer name="initialM" value="1024"/>
+		<integer name="n" value="1"/>
+		<integer name="k" value="3"/>
+		<integer name="radius" value="30" />
+	</integrator>
+	<!-- <integrator type="path">
+		<integer name="maxDepth" value="2"/>
+	</integrator> -->
+	<sensor type="perspective" id="elm__1" name="elm__1">
+		<string name="fov_axis" value="x"/>
+		<float name="fov" value="39.597755"/>
+		<float name="principal_point_offset_x" value="0.000000"/>
+		<float name="principal_point_offset_y" value="-0.000000"/>
+		<float name="near_clip" value="0.100000"/>
+		<float name="far_clip" value="100.000000"/>
+		<transform name="to_world">
+			<rotate x="1" angle="-162.35923830745753"/>
+			<rotate y="1" angle="-30.291943610519912"/>
+			<rotate z="1" angle="179.99997768819966"/>
+			<translate value="2.630283 2.171639 4.286677"/>
+		</transform>
+		<sampler type="independent" name="sampler">
+			<integer name="sample_count" value="$spp"/>
+		</sampler>
+		<film type="hdrfilm" name="film">
+			<integer name="width" value="$resx"/>
+			<integer name="height" value="$resy"/>
+		</film>
+	</sensor>
+
+<!-- Materials -->
+
+	<bsdf type="diffuse" id="mat-monkey.001" name="mat-monkey.001">
+		<rgb value="0.800000 0.8 0.8" name="base_color"/>
+	</bsdf>
+	<bsdf type="principled" id="mat-monkey" name="mat-monkey">
+		<rgb value="0.731 0.8 0.355" name="base_color"/>
+		<float name="spec_tint" value="0.000000"/>
+		<float name="spec_trans" value="1.000000"/>
+		<float name="metallic" value="1.0"/>
+		<float name="specular" value="0.364"/>
+		<float name="anisotropic" value="0.000000"/>
+		<float name="roughness" value="0.314"/>
+		<!-- <float name="sheen" value="0.486"/>
+		<float name="sheen_tint" value="0.500000"/> -->
+		<float name="clearcoat" value="0.486"/>
+		<float name="clearcoat_gloss" value="0.245"/>
+		<float name="eta" value="1.45"/>
+	</bsdf>
+
+<!-- Emitters -->
+
+	<shape type="rectangle" id="elm__6" name="elm__6">
+		<boolean name="flip_normals" value="true"/>
+		<transform name="to_world">
+			<matrix value="2.205484 -0.011448 -0.736982 -1.238375 0.564439 -1.469032 1.711954 5.537707 -0.474007 -1.802567 -1.390505 -3.865293 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<emitter type="area" name="emitter">
+			<rgb value="0.625589 1.201684 3.467448" name="radiance"/>
+		</emitter>
+		<bsdf type="null" name="bsdf"/>
+	</shape>
+	<shape type="rectangle" id="elm__7" name="elm__7">
+		<boolean name="flip_normals" value="true"/>
+		<transform name="to_world">
+			<matrix value="2.207309 -0.146528 -1.279116 -1.780670 0.884075 2.018092 1.294425 3.401262 0.935959 -1.560658 1.793920 3.601541 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<emitter type="area" name="emitter">
+			<rgb value="2.871443 0.277160 0.395857" name="radiance"/>
+		</emitter>
+		<bsdf type="null" name="bsdf"/>
+	</shape>
+	<shape type="rectangle" id="elm__8" name="elm__8">
+		<boolean name="flip_normals" value="true"/>
+		<transform name="to_world">
+			<matrix value="0.879733 0.435217 0.965029 4.023916 -0.914581 0.944367 0.407845 2.102161 -0.533139 -0.901877 0.892752 3.721040 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<emitter type="area" name="emitter">
+			<rgb value="3.042552 1.006677 3.298805" name="radiance"/>
+		</emitter>
+		<bsdf type="null" name="bsdf"/>
+	</shape>
+
+<!-- Shapes -->
+
+	<shape type="ply" id="elm__3" name="elm__3">
+		<string name="filename" value="meshes/平面.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-monkey.001" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__5" name="elm__5">
+		<string name="filename" value="meshes/猴头.ply"/>
+		<ref id="mat-monkey" name="bsdf"/>
+	</shape>
+
+<!-- Volumes -->
+
+</scene>

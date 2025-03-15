@@ -1,0 +1,208 @@
+<scene version="2.1.0">
+
+<!-- Defaults, these can be set via the command line: -Darg=value -->
+
+	<default name="spp" value="1024"/>
+	<default name="resx" value="1280"/>
+	<default name="resy" value="720"/>
+
+<!-- Camera and Rendering Parameters -->
+
+	<integrator type="path" id="elm__0" name="elm__0">
+		<integer name="max_depth" value="-1"/>
+	</integrator>
+	<sensor type="perspective" id="elm__1" name="elm__1">
+		<string name="fov_axis" value="x"/>
+		<float name="fov" value="35.000000"/>
+		<float name="principal_point_offset_x" value="0.000000"/>
+		<float name="principal_point_offset_y" value="-0.000000"/>
+		<float name="near_clip" value="0.010000"/>
+		<float name="far_clip" value="10000.000000"/>
+		<transform name="to_world">
+			<rotate x="1" angle="177.46843637422612"/>
+			<rotate y="1" angle="-40.63680127835407"/>
+			<rotate z="1" angle="-179.99993670706465"/>
+			<translate value="29.525196 6.345150 34.512135"/>
+		</transform>
+		<sampler type="independent" name="sampler">
+			<integer name="sample_count" value="$spp"/>
+		</sampler>
+		<film type="hdrfilm" name="film">
+			<integer name="width" value="$resx"/>
+			<integer name="height" value="$resy"/>
+		</film>
+	</sensor>
+
+<!-- Materials -->
+
+	<bsdf type="principled" id="mat-GroundOuterBSDF" name="mat-GroundOuterBSDF">
+		<rgb value="0.800000 0.049097 0.029826" name="base_color"/>
+		<float name="spec_tint" value="0.000000"/>
+		<float name="spec_trans" value="1.000000"/>
+		<float name="metallic" value="0.000000"/>
+		<float name="anisotropic" value="0.000000"/>
+		<float name="roughness" value="0.250000"/>
+		<float name="sheen" value="0.000000"/>
+		<float name="sheen_tint" value="0.500000"/>
+		<float name="clearcoat" value="0.000000"/>
+		<float name="clearcoat_gloss" value="0.000900"/>
+		<float name="eta" value="2.417000"/>
+	</bsdf>
+	<bsdf type="twosided" id="mat-ClothBSDF" name="mat-ClothBSDF">
+		<bsdf type="diffuse" name="bsdf">
+			<rgb value="0.456263 0.002953 0.021506" name="reflectance"/>
+		</bsdf>
+	</bsdf>
+	<bsdf type="twosided" id="mat-GroundInnerBSDF" name="mat-GroundInnerBSDF">
+		<bsdf type="diffuse" name="bsdf">
+			<rgb value="0.456263 0.312199 0.066170" name="reflectance"/>
+		</bsdf>
+	</bsdf>
+	<bsdf type="principled" id="mat-DragonBSDF" name="mat-DragonBSDF">
+		<!-- <rgb value="0.628000 0.800000 0.416482" name="base_color"/>
+		<float name="spec_tint" value="0.000000"/>
+		<float name="spec_trans" value="0.70000"/>
+		<float name="metallic" value="0.000000"/>
+		<float name="anisotropic" value="0.000000"/>
+		<float name="roughness" value="0.000400"/>
+		<float name="sheen" value="0.000000"/>
+		<float name="sheen_tint" value="0.500000"/>
+		<float name="clearcoat" value="0.000000"/>
+		<float name="clearcoat_gloss" value="0.000900"/>
+		<float name="eta" value="20.417000"/> -->
+		<rgb name="baseColor" value="0.9 0.33 0.36"/>
+		<float name="specularTransmission" value="0.0"/>
+		<float name="metallic" value="0.1"/>
+		<float name="subsurface" value="0.5"/>
+		<float name="specular" value="0.2"/>
+		<float name="roughness" value="0.8"/>
+		<float name="specularTint" value="0.5"/>
+		<float name="anisotropic" value="0.0"/>
+		<float name="sheen" value="1.0"/>
+		<float name="sheenTint" value="0.5"/>
+		<float name="clearcoat" value="0.5"/>
+		<float name="clearcoatGloss" value="0.5"/>
+		<float name="eta" value="1.5"/>
+	</bsdf>
+	<bsdf type="principled" id="mat-Material" name="mat-Material">
+		<rgb value="0.385100 0.385100 0.385100" name="base_color"/>
+		<float name="spec_tint" value="0.000000"/>
+		<float name="spec_trans" value="1.000000"/>
+		<float name="metallic" value="0.000000"/>
+		<float name="anisotropic" value="0.000000"/>
+		<float name="roughness" value="0.000400"/>
+		<float name="sheen" value="0.000000"/>
+		<float name="sheen_tint" value="0.500000"/>
+		<float name="clearcoat" value="0.000000"/>
+		<float name="clearcoat_gloss" value="0.000900"/>
+		<float name="eta" value="10.417000"/>
+	</bsdf>
+	<bsdf type="twosided" id="mat-BladeBSDF" name="mat-BladeBSDF">
+		<bsdf type="diffuse" name="bsdf">
+			<rgb value="0.386173 0.386173 0.386173" name="reflectance"/>
+		</bsdf>
+	</bsdf>
+	<bsdf type="twosided" id="mat-SwordBSDF" name="mat-SwordBSDF">
+		<bsdf type="diffuse" name="bsdf">
+			<rgb value="0.793110 0.793110 0.793110" name="reflectance"/>
+		</bsdf>
+	</bsdf>
+	<bsdf type="twosided" id="mat-DecoBSDF" name="mat-DecoBSDF">
+		<bsdf type="diffuse" name="bsdf">
+			<rgb value="0.793110 0.243314 0.030746" name="reflectance"/>
+		</bsdf>
+	</bsdf>
+	<bsdf type="twosided" id="mat-DiamondBSDF" name="mat-DiamondBSDF">
+		<bsdf type="diffuse" name="bsdf">
+			<rgb value="0.793110 0.793110 0.793110" name="reflectance"/>
+		</bsdf>
+	</bsdf>
+	<bsdf type="twosided" id="mat-Deco2BSDF" name="mat-Deco2BSDF">
+		<bsdf type="diffuse" name="bsdf">
+			<rgb value="0.793110 0.176816 0.063843" name="reflectance"/>
+		</bsdf>
+	</bsdf>
+
+<!-- Emitters -->
+
+	<shape type="rectangle" id="elm__28" name="elm__28">
+		<boolean name="flip_normals" value="true"/>
+		<transform name="to_world">
+			<matrix value="-4.826194 -0.904748 -0.943018 0.000000 0.000000 -3.607985 3.461566 19.083849 -1.306848 3.341238 3.482568 11.440187 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<emitter type="area" name="emitter">
+			<rgb value="6.344189 12.000000 11.506296" name="radiance"/>
+		</emitter>
+		<bsdf type="null" name="bsdf"/>
+	</shape>
+
+<!-- Shapes -->
+
+	<shape type="ply" id="elm__3" name="elm__3">
+		<string name="filename" value="meshes/GroundOuter_0001.ply"/>
+		<ref id="mat-GroundOuterBSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__5" name="elm__5">
+		<string name="filename" value="meshes/Cloth.ply"/>
+		<ref id="mat-ClothBSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__6" name="elm__6">
+		<string name="filename" value="meshes/GroundOuter_0002.ply"/>
+		<ref id="mat-GroundOuterBSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__7" name="elm__7">
+		<string name="filename" value="meshes/GroundOuter_0003.ply"/>
+		<ref id="mat-GroundOuterBSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__9" name="elm__9">
+		<string name="filename" value="meshes/GroundInner.ply"/>
+		<ref id="mat-GroundInnerBSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__10" name="elm__10">
+		<string name="filename" value="meshes/GroundOuter_0004.ply"/>
+		<ref id="mat-GroundOuterBSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__12" name="elm__12">
+		<string name="filename" value="meshes/Dragon_0001.ply"/>
+		<ref id="mat-DragonBSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__14" name="elm__14">
+		<string name="filename" value="meshes/Dragon_0002.ply"/>
+		<ref id="mat-Material" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__15" name="elm__15">
+		<string name="filename" value="meshes/Dragon_0003.ply"/>
+		<ref id="mat-DragonBSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__16" name="elm__16">
+		<string name="filename" value="meshes/Dragon_0004.ply"/>
+		<ref id="mat-DragonBSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__18" name="elm__18">
+		<string name="filename" value="meshes/Blade.ply"/>
+		<ref id="mat-BladeBSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__20" name="elm__20">
+		<string name="filename" value="meshes/Sword.ply"/>
+		<ref id="mat-SwordBSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__22" name="elm__22">
+		<string name="filename" value="meshes/Deco.ply"/>
+		<ref id="mat-DecoBSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__24" name="elm__24">
+		<string name="filename" value="meshes/Diamond.ply"/>
+		<ref id="mat-DiamondBSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__26" name="elm__26">
+		<string name="filename" value="meshes/Deco2_0001.ply"/>
+		<ref id="mat-Deco2BSDF" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__27" name="elm__27">
+		<string name="filename" value="meshes/Deco2_0002.ply"/>
+		<ref id="mat-Deco2BSDF" name="bsdf"/>
+	</shape>
+
+<!-- Volumes -->
+
+</scene>

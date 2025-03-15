@@ -1,0 +1,147 @@
+[
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/test_matrix.dir/src/tests/matrix.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/tests/matrix.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/tests/matrix.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/test_materials.dir/src/tests/materials.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/tests/materials.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/tests/materials.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/test_intersection.dir/src/tests/intersection.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/tests/intersection.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/tests/intersection.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/test_mipmap.dir/src/tests/mipmap.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/tests/mipmap.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/tests/mipmap.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/test_image.dir/src/tests/image.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/tests/image.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/tests/image.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/test_frame.dir/src/tests/frame.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/tests/frame.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/tests/frame.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/test_filter.dir/src/tests/filter.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/tests/filter.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/tests/filter.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -pthread -std=gnu++17 -o CMakeFiles/lajolla.dir/src/main.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/main.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/main.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/gcc  -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -o CMakeFiles/lajolla_lib.dir/src/3rdparty/miniz.c.o   -c /mnt/d/JICONG/Developer/lajolla_public/src/3rdparty/miniz.c",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/3rdparty/miniz.c"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/3rdparty/pugixml.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/3rdparty/pugixml.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/3rdparty/pugixml.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/parsers/load_serialized.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/parsers/load_serialized.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/parsers/load_serialized.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/parsers/parse_obj.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/parsers/parse_obj.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/parsers/parse_obj.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/parsers/parse_ply.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/parsers/parse_ply.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/parsers/parse_ply.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/parsers/parse_scene.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/parsers/parse_scene.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/parsers/parse_scene.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/camera.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/camera.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/camera.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/filter.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/filter.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/filter.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/image.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/image.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/image.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/intersection.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/intersection.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/intersection.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/light.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/light.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/light.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/material.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/material.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/material.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/medium.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/medium.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/medium.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/parallel.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/parallel.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/parallel.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/phase_function.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/phase_function.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/phase_function.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/render.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/render.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/render.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/scene.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/scene.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/scene.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/shape.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/shape.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/shape.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/table_dist.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/table_dist.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/table_dist.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/transform.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/transform.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/transform.cpp"
+},
+{
+  "directory": "/mnt/d/JICONG/Developer/lajolla_public/build",
+  "command": "/usr/bin/g++   -I/mnt/d/JICONG/Developer/lajolla_public/embree/include -I/mnt/d/JICONG/Developer/lajolla_public/src  -O2 -g -DNDEBUG   -Wall -std=gnu++17 -o CMakeFiles/lajolla_lib.dir/src/volume.cpp.o -c /mnt/d/JICONG/Developer/lajolla_public/src/volume.cpp",
+  "file": "/mnt/d/JICONG/Developer/lajolla_public/src/volume.cpp"
+}
+]

@@ -1,0 +1,143 @@
+<scene version="2.1.0">
+
+<!-- Defaults, these can be set via the command line: -Darg=value -->
+
+	<default name="spp" value="1"/>
+	<default name="resx" value="1920"/>
+	<default name="resy" value="1080"/>
+
+<!-- Camera and Rendering Parameters -->
+
+	<integrator type="restir" id="elm__0" name="elm__0">
+		<integer name="maxM" value="10000"/>
+		<integer name="initialM" value="64"/>
+		<integer name="n" value="1"/>
+		<integer name="k" value="3"/>
+		<integer name="radius" value="30" />
+		<integer name="spatial_iter" value="4" />
+	</integrator>
+	<!-- <integrator type="path">
+		<integer name="maxDepth" value="2"/>
+	</integrator> -->
+	<sensor type="perspective" id="elm__1" name="elm__1">
+		<string name="fov_axis" value="x"/>
+		<float name="fov" value="39.597755"/>
+		<float name="principal_point_offset_x" value="0.000000"/>
+		<float name="principal_point_offset_y" value="-0.000000"/>
+		<float name="near_clip" value="0.100000"/>
+		<float name="far_clip" value="100.000000"/>
+		<transform name="to_world">
+			<rotate x="1" angle="-162.35923830745753"/>
+			<rotate y="1" angle="-30.291943610519912"/>
+			<rotate z="1" angle="179.99997768819966"/>
+			<translate value="2.630283 2.171639 4.286677"/>
+		</transform>
+		<sampler type="independent" name="sampler">
+			<integer name="sample_count" value="$spp"/>
+		</sampler>
+		<film type="hdrfilm" name="film">
+			<integer name="width" value="$resx"/>
+			<integer name="height" value="$resy"/>
+		</film>
+	</sensor>
+
+<!-- Materials -->
+
+	<bsdf type="diffuse" id="mat-monkey.001" name="mat-monkey.001">
+		<rgb value="0.800000 0.8 0.8" name="base_color"/>
+	</bsdf>
+	<bsdf type="principled" id="mat-monkey" name="mat-monkey">
+		<rgb value="0.731 0.8 0.355" name="base_color"/>
+		<float name="spec_tint" value="0.000000"/>
+		<float name="spec_trans" value="1.000000"/>
+		<float name="metallic" value="0.5"/>
+		<float name="specular" value="0.364"/>
+		<float name="anisotropic" value="0.000000"/>
+		<float name="roughness" value="0.6"/>
+		<!-- <float name="sheen" value="0.486"/>
+		<float name="sheen_tint" value="0.500000"/> -->
+		<float name="clearcoat" value="0.486"/>
+		<float name="clearcoat_gloss" value="0.245"/>
+		<float name="eta" value="1.45"/>
+	</bsdf>
+
+<!-- Emitters -->
+
+	<shape type="rectangle" id="elm__6" name="elm__6">
+		<boolean name="flip_normals" value="true"/>
+		<transform name="to_world">
+			<matrix value="2.205484 -0.011448 -0.736982 -1.238375 0.564439 -1.469032 1.711954 5.537707 -0.474007 -1.802567 -1.390505 -3.865293 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<emitter type="area" name="emitter">
+			<rgb value="0.625589 1.201684 3.467448" name="radiance"/>
+		</emitter>
+		<bsdf type="null" name="bsdf"/>
+	</shape>
+	<shape type="rectangle" id="elm__7" name="elm__7">
+		<boolean name="flip_normals" value="true"/>
+		<transform name="to_world">
+			<matrix value="2.207309 -0.146528 -1.279116 -1.780670 0.884075 2.018092 1.294425 3.401262 0.935959 -1.560658 1.793920 3.601541 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<emitter type="area" name="emitter">
+			<rgb value="2.871443 0.277160 0.395857" name="radiance"/>
+		</emitter>
+		<bsdf type="null" name="bsdf"/>
+	</shape>
+	<shape type="rectangle" id="elm__8" name="elm__8">
+		<boolean name="flip_normals" value="true"/>
+		<transform name="to_world">
+			<matrix value="0.879733 0.435217 0.965029 4.023916 -0.914581 0.944367 0.407845 2.102161 -0.533139 -0.901877 0.892752 3.721040 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<emitter type="area" name="emitter">
+			<rgb value="3.042552 1.006677 3.298805" name="radiance"/>
+		</emitter>
+		<bsdf type="null" name="bsdf"/>
+	</shape>
+	 <!-- <emitter type="point" id="elm__9" name="elm__9">
+		<point name="position" x="0.8214923739433289" y="5.388547897338867" z="-0.5145801305770874"/>
+		<rgb value="11.108389 15.915494 4.236591" name="intensity"/>
+	</emitter>
+	<emitter type="point" id="elm__10" name="elm__10">
+		<point name="position" x="-1.7218246459960938" y="4.701108932495117" z="1.0463279485702515"/>
+		<rgb value="15.915494 10.017148 1.771963" name="intensity"/>
+	</emitter>
+	<emitter type="point" id="elm__11" name="elm__11">
+		<point name="position" x="2.3598856925964355" y="2.918794631958008" z="-1.2709122896194458"/>
+		<rgb value="15.915494 3.697213 14.865952" name="intensity"/>
+	</emitter>
+	<emitter type="point" id="elm__12" name="elm__12">
+		<point name="position" x="3.2397372722625732" y="-0.2690686583518982" z="0.0013445615768432617"/>
+		<rgb value="15.915494 10.017148 1.771963" name="intensity"/>
+	</emitter>
+	<emitter type="point" id="elm__13" name="elm__13">
+		<point name="position" x="-0.6224720478057861" y="4.649417400360107" z="2.379425048828125"/>
+		<rgb value="2.378007 15.915494 13.702407" name="intensity"/>
+	</emitter>
+	<emitter type="point" id="elm__14" name="elm__14">
+		<point name="position" x="-1.6257445812225342" y="5.1023850440979" z="-1.42246675491333"/>
+		<rgb value="33.325153 12.709772 47.746483" name="intensity"/>
+	</emitter>
+	<emitter type="point" id="elm__15" name="elm__15">
+		<point name="position" x="1.4999725818634033" y="0.7706918716430664" z="2.245148181915283"/>
+		<rgb value="33.530659 12.788150 48.040920" name="intensity"/>
+	</emitter>
+	<emitter type="point" id="elm__16" name="elm__16">
+		<point name="position" x="3.1377131938934326" y="0.9587761759757996" z="0.5481622219085693"/>
+		<rgb value="7.957747 0.000000 0.071526" name="intensity"/>
+	</emitter>  -->
+
+<!-- Shapes -->
+
+	<shape type="ply" id="elm__3" name="elm__3">
+		<string name="filename" value="meshes/平面.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-monkey.001" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__5" name="elm__5">
+		<string name="filename" value="meshes/猴头.ply"/>
+		<ref id="mat-monkey" name="bsdf"/>
+	</shape>
+
+<!-- Volumes -->
+
+</scene>

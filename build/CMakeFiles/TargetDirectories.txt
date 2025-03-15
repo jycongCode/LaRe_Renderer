@@ -1,0 +1,12 @@
+/mnt/d/JICONG/Developer/lajolla_public/build/CMakeFiles/rebuild_cache.dir
+/mnt/d/JICONG/Developer/lajolla_public/build/CMakeFiles/edit_cache.dir
+/mnt/d/JICONG/Developer/lajolla_public/build/CMakeFiles/test.dir
+/mnt/d/JICONG/Developer/lajolla_public/build/CMakeFiles/test_matrix.dir
+/mnt/d/JICONG/Developer/lajolla_public/build/CMakeFiles/test_materials.dir
+/mnt/d/JICONG/Developer/lajolla_public/build/CMakeFiles/test_intersection.dir
+/mnt/d/JICONG/Developer/lajolla_public/build/CMakeFiles/test_mipmap.dir
+/mnt/d/JICONG/Developer/lajolla_public/build/CMakeFiles/test_image.dir
+/mnt/d/JICONG/Developer/lajolla_public/build/CMakeFiles/test_frame.dir
+/mnt/d/JICONG/Developer/lajolla_public/build/CMakeFiles/test_filter.dir
+/mnt/d/JICONG/Developer/lajolla_public/build/CMakeFiles/lajolla.dir
+/mnt/d/JICONG/Developer/lajolla_public/build/CMakeFiles/lajolla_lib.dir

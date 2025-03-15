@@ -1,0 +1,1 @@
+/usr/bin/g++  -O2 -g -DNDEBUG   CMakeFiles/lajolla.dir/src/main.cpp.o  -o lajolla  -Wl,-rpath,/mnt/d/JICONG/Developer/lajolla_public/embree/lib-linux ../embree/lib-linux/libembree4.so liblajolla_lib.a ../embree/lib-linux/libembree4.so -pthread 

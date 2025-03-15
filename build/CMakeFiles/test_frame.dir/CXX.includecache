@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/JICONG/Developer/lajolla_public/src/frame.h
+lajolla.h
+/mnt/d/JICONG/Developer/lajolla_public/src/lajolla.h
+vector.h
+/mnt/d/JICONG/Developer/lajolla_public/src/vector.h
+
+/mnt/d/JICONG/Developer/lajolla_public/src/lajolla.h
+cassert
+-
+cmath
+-
+cstdint
+-
+filesystem
+-
+iostream
+-
+limits
+-
+algorithm
+-
+
+/mnt/d/JICONG/Developer/lajolla_public/src/tests/frame.cpp
+../frame.h
+/mnt/d/JICONG/Developer/lajolla_public/src/frame.h
+cstdio
+-
+
+/mnt/d/JICONG/Developer/lajolla_public/src/vector.h
+lajolla.h
+/mnt/d/JICONG/Developer/lajolla_public/src/lajolla.h
+math.h
+-
+cmath
+-
+

@@ -1,4 +1,4 @@
-# lajolla
+# LaRe
 Improved over lajolla renderer, with features
 - Disney principled bsdf
 - volumetric render
